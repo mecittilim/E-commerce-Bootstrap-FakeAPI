@@ -8,4 +8,5 @@
 
 <hr>
 <h3>Demo Link</h3>
-+ [Live link](https://mecittilim.github.io/NikeStore/)
+
++ [Live link](https://mecittilim.github.io/E-commerce-Bootstrap-FakeAPI/)
