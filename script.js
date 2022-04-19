@@ -1,11 +1,12 @@
 document.getElementById("all").addEventListener("click",getAll)
 document.getElementById("jewelery").addEventListener("click",getJewelery)
 document.getElementById("men").addEventListener("click",getMen)
+const hero = document.getElementById("hero")
 
 // Get All Products
 
 function getAll(){
-
+    hero.style.display = "none"
     var url = 'https://fakestoreapi.com/products'
     var xhr = new XMLHttpRequest()
 
@@ -20,10 +21,10 @@ function getAll(){
             posts.forEach(post => {
     
             html += ` <div class="col-sm-4">
-                             <div class="card mb-3" style="max-width: 540px;">
+                             <div class="card mb-3" style="max-width: 540px; height: 90%;" >
                              <div class="row g-0">
                                  <div class="col-md-4">
-                                     <img src="${post.image}" class="img-fluid rounded-start p-4" alt="...">
+                                     <img src="${post.image}" class="img-fluid rounded-start p-4"  alt="...">
                                  </div>
                                  <div class="col-md-8">
                                      <div class="card-body">
@@ -57,13 +58,13 @@ function getJewelery() {
         products.forEach(user => { //user ı foreach le dönüp tek tek objeler şeklinde yaz
             html += `
             <div class="col-sm-4">
-                             <div class="card mb-3" style="max-width: 540px;">
+                             <div class="card mb-3" style="max-width: 540px; height: 90%;" >
                              <div class="row g-0">
                                  <div class="col-md-4">
                                      <img src="${user.image}" class="img-fluid rounded-start p-4" alt="...">
                                  </div>
                                  <div class="col-md-8">
-                                     <div class="card-body bg-light">
+                                     <div class="card-body py-3">
                                          <h5 class="card-title">${user.title}</h5>
                                          <p class="card-desc">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                          <p class="card-price"><small class="text-dark" style="font-size: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">adads</small></p>
@@ -85,6 +86,7 @@ function getJewelery() {
 // get Men
 
 function getMen() {
+
     fetch("https://fakestoreapi.com/products/category/men's clothing")
     .then(data => {
         return data.json()
@@ -94,7 +96,7 @@ function getMen() {
         products.forEach(user => { //user ı foreach le dönüp tek tek objeler şeklinde yaz
             html += `
             <div class="col-sm-4">
-                             <div class="card mb-3" style="max-width: 540px;">
+                             <div class="card mb-3" style="max-width: 540px; height: 90%;" >
                              <div class="row g-0">
                                  <div class="col-md-4">
                                      <img src="${user.image}" class="img-fluid rounded-start p-4" alt="...">
