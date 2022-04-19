@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,23 +30,23 @@
 
   <!-- Navbar -->
 
-  <nav class="navbar navbar-light bg-light d-flex" >
+  <nav class="navbar navbar-light bg-light d-flex" id="navbar">
 
     <!-- NAvTop -->
-    <div class="container-fluid">
-      <a class="navbar-brand ml-5 " href="#">My<strong>Store</strong></a>
+    <div class="container-fluid mr-1">
+      <a class="navbar-brand ml-5 my-0" href="#"><p class="font-weight-bold" style="font-size: 25px;">My<strong>Store</strong></p></a>
       <ul class="nav justify-content-center ">
         <li class="nav-item ">
           <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item ml-3">
           <a class="nav-link text-secondary" href="#">Stores</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item ml-3">
           <a class="nav-link text-secondary" href="#">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-secondary" href="#">Contact</a>
+        <li class="nav-item ml-3">
+          <a class="nav-link text-secondary" href="#footer">Contact</a>
         </li>
         
       </ul>
@@ -54,10 +54,10 @@
     </div>
 
     <!-- NavBottom -->
-    <div class="row container-fluid justify-content-end">
+    <div class="row container-fluid d-flex ">
 
-      <div class="col-md-5 container-fluid justify-content-start">
-        <ul class="nav">
+      
+        <ul class="nav col-6 ml-5">
           <li class="nav-item mr-5">
             <a class="nav-link text-dark" href="#" id="all">All</a>
           </li>
@@ -74,20 +74,24 @@
             <a class="nav-link text-dark" href="#" id="jewelery">Jewelery</a>
           </li>
         </ul>
-      </div>
-      <div class="col-md-3">
-        <form class="d-flex">
-          <input class="form-control me-2 mr-1 " type="search" placeholder="Search" aria-label="Search">
+      
+      
+        <form class="d-flex float-right col-3">
+          <input class="form-control me-2 mr-1" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success mr-3" type="submit" id="search">Search</button>
         </form>
-      </div>
+      
       
     </div>
   </nav>
 
   <!-- Product Section -->
 
-  <div class="row"></div>
+  <div class="row m-5" id="product">
+    
+
+    
+  </div>
 
   <!-- Hero-->
 
@@ -150,7 +154,7 @@
 
   <div class="row px-5 my-5">
     <div class="col-sm-4 d-flex align-items-center justify-content-center">
-      <img src="img/dream.webp" class="dream" alt="" height="75%">
+      <img src="img/dream.webp" class="dream" alt="" height="75%" width="100%">
     </div>
     <div class="col-sm-4 d-flex align-items-center flex-column justify-content-center">
       <p class="display-3 font-monospace">DREAM</p>
@@ -158,7 +162,7 @@
       <p class="display-1">BUILD</p>
     </div>
     <div class="col-sm-4 d-flex align-items-center">
-      <img src="img/build.webp" class="dream" height="75%" alt="">
+      <img src="img/build.webp" class="dream" height="75%" alt="" width="100%">
     </div>
   </div>
 
@@ -168,16 +172,23 @@
 
   <!-- footer -->
 
-  <footer class="bg-light">
+  <footer class="bg-light" id="footer">
     <div class="row">
-      <div class="col-sm-4 m-5">
+      <div class="col-sm-5 m-5 d-flex align-items-center flex-column">
+        <a href="#navbar" style="color: black; text-decoration: none;"><p class="font-weight-bold" style="font-size: 25px;">My<strong>Store</strong></p></a>
+        
         <h2>APP'İ İNDİR</h2>
-        <div class="fImg my-4 d-flex ">
+        <div class="fApp my-4 d-flex ">
           <img src="img/playstore.png" class="mr-2 " width="20px" alt="">
           <img src="img/applstore.png" width="20px" alt="">
         </div>
         <div class="fIcons d-flex ">
-          <img src="img/instagram.png" class="mr-2" width="20px" alt="">
+          <a href="https://www.instagram.com/mecitilim/" target="_blank" class="">
+            <img src="img/instagram.png" class="mr-2" width="20px" alt="">
+          </a>
+          <a href="https://www.linkedin.com/in/mecit-tilim-b5a996134/" class="">
+            <img src="img/linkedn.png" class="mr-2" width="20px" alt="">
+          </a>
           <img src="img/twitter.png" class="mr-2" width="20px" alt="">
           <img src="img/facebook.png" class="mr-2" width="20px" alt="">
           <img src="img/whatsapp.png" width="20px" alt="">
@@ -187,33 +198,48 @@
         </div>
       </div>
 
-      <div class="col-sm-7 mt-5 d-flex">
-        <div class="">
+      <div class="col-sm-5 mt-5 d-flex justify-content-sm-evenly">
+        <div class="fList">
           <ul>
-            <h5 style="font-size: small;" class="mb-4">YARDIM</h5>
-            <li style="list-style: none; font-size: small;">Sipariş Sorgulama</li>
-            <li style="list-style: none; font-size: small;;">İade ve Değişim</li>
-            <li style="list-style: none; font-size: small;;">Sıkça Sorulan Sorular</li>
-            <li style="list-style: none; font-size: small;;">Beden Tablosu</li>
-            <li style="list-style: none; font-size: small;">İşlem Rehberi</li>
-            <li style="list-style: none; font-size: small;">Site Haritası</li>
-            <li style="list-style: none; font-size: small;">En Yakın Store</li>
-            <li style="list-style: none; font-size: small;">Bize Ulaşın</li>
+            <h5 style="font-size: small;" class="mb-4">HELP</h5>
+            <li style="list-style: none; font-size: small;">Order Inquiry</li>
+            <li style="list-style: none; font-size: small;;">Returns and Exchanges</li>
+            <li style="list-style: none; font-size: small;;">Frequently Asked Questions</li>
+            <li style="list-style: none; font-size: small;;">Size Chart</li>
+            <li style="list-style: none; font-size: small;">Trading Guide</li>
+            <li style="list-style: none; font-size: small;">Sitemap</li>
+            <li style="list-style: none; font-size: small;">Nearest Blue</li>
+            <li style="list-style: none; font-size: small;">Contact us</li>
           </ul>
         </div>
-        <div class="">
+        <div class="fList">
           <ul>
-            <h5 style="font-size: small;" class="mb-4">KURUMSAL BİLGİLER</h5>
-            <li style="list-style: none; font-size: small;">İletişim</li>
-            <li style="list-style: none; font-size: small;;">Hakkımızda/li>
-            <li style="list-style: none; font-size: small;;">Sürdürülebilirlik</li>
-            <li style="list-style: none; font-size: small;;">Mavi'de Biz ve İlkelerimiz</li>
-            <li style="list-style: none; font-size: small;">Sosyal Sorumluluk</li>
+            <h5 style="font-size: small;" class="mb-4">CORPORATE INFORMATION</h5>
+            <li style="list-style: none; font-size: small;">Communication</li>
+            <li style="list-style: none; font-size: small;;">about us</li>
+            <li style="list-style: none; font-size: small;;">Sustainability</li>
+            <li style="list-style: none; font-size: small;;">We at MEC and Our Principles</li>
+            <li style="list-style: none; font-size: small;">Social responsibility</li>
             <li style="list-style: none; font-size: small;">Mecology</li>
-            <li style="list-style: none; font-size: small;">25.Yıl</li>
-            <li style="list-style: none; font-size: small;">Kariyer</li>
-            <li style="list-style: none; font-size: small;">Kurumsal Satış</li>
-            <li style="list-style: none; font-size: small;">Bayilik Başvuru Formu</li>
+            <li style="list-style: none; font-size: small;">25 years</li>
+            <li style="list-style: none; font-size: small;">Career</li>
+            <li style="list-style: none; font-size: small;">Corporate Sales</li>
+            <li style="list-style: none; font-size: small;">Dealership Application Form</li>
+          </ul>
+        </div>
+        <div class="fList">
+          <ul>
+            <h5 style="font-size: small;" class="mb-4">FAVORITE CATEGORIES</h5>
+            <li style="list-style: none; font-size: small;">Oversized T-Shirt</li>
+            <li style="list-style: none; font-size: small;;">Women's College Jacket</li>
+            <li style="list-style: none; font-size: small;;">Women's Jeans</li>
+            <li style="list-style: none; font-size: small;;">Women's T-Shirt</li>
+            <li style="list-style: none; font-size: small;">Men's Coats</li>
+            <li style="list-style: none; font-size: small;">Women's Denim Jacket</li>
+            <li style="list-style: none; font-size: small;">Women's Skinny Jeans</li>
+            <li style="list-style: none; font-size: small;">Women's Coats</li>
+            <li style="list-style: none; font-size: small;">Women's Sweatshirts</li>
+            <li style="list-style: none; font-size: small;">Men's Jeans</li>
           </ul>
         </div>
           
@@ -225,3 +251,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
