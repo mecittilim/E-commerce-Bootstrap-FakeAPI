@@ -21,7 +21,7 @@ function getAll(){
             posts.forEach(post => {
     
             html += ` <div class="col-sm-4">
-                             <div class="card mb-3" style="max-width: 540px; height: 90%;" >
+                             <div class="card mb-3" style="max-width: 540px;  height: auto;" >
                              <div class="row g-0">
                                  <div class="col-md-4">
                                      <img src="${post.image}" class="img-fluid rounded-start p-4"  alt="...">
@@ -31,7 +31,7 @@ function getAll(){
                                          <h5 class="card-title">${post.title}</h5>
                                          <p class="card-desc">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                          <p class="card-price"><small class="text-dark" style="font-size: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">adads</small></p>
-                                         <a href="#" class="btn btn-primary my-2">Buy Now! </a>
+                                         <a href="#" class="btn btn-primary my-2 card-button">Buy Now! </a>
                                      </div>
                                  </div>
                              </div>
@@ -58,7 +58,7 @@ function getJewelery() {
         products.forEach(user => { //user ı foreach le dönüp tek tek objeler şeklinde yaz
             html += `
             <div class="col-sm-4">
-                             <div class="card mb-3" style="max-width: 540px; height: 90%;" >
+                             <div class="card mb-3" style="max-width: 540px; height: auto;" >
                              <div class="row g-0">
                                  <div class="col-md-4">
                                      <img src="${user.image}" class="img-fluid rounded-start p-4" alt="...">
@@ -96,7 +96,7 @@ function getMen() {
         products.forEach(user => { //user ı foreach le dönüp tek tek objeler şeklinde yaz
             html += `
             <div class="col-sm-4">
-                             <div class="card mb-3" style="max-width: 540px; height: 90%;" >
+                             <div class="card mb-3" style="max-width: 540px; height: auto;;" >
                              <div class="row g-0">
                                  <div class="col-md-4">
                                      <img src="${user.image}" class="img-fluid rounded-start p-4" alt="...">
