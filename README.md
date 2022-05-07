@@ -4,6 +4,7 @@
 <ul>
   <li>Bootstrap</li>
   <li>Responsive Design</li>
+  <li>DOM</li>
 </ul>
 
 <hr>
